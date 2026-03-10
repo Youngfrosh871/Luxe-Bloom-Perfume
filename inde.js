@@ -1,23 +1,18 @@
-const slides = document.querySelector(".slides");
-const images = document.querySelectorAll(".slides img");
-
+let slides = document.querySelectorAll(".slide");
 let index = 0;
 
-document.querySelector(".next").onclick = () =>{
+function showSlide(){
+
+slides.forEach(s=>s.classList.remove("active"));
+
 index++;
-if(index >= images.length){
+
+if(index >= slides.length){
 index = 0;
 }
-slides.style.transform = `translateX(${-index * 400}px)`;
+
+slides[index].classList.add("active");
+
 }
 
-document.querySelector(".prev").onclick = () =>{
-index--;
-if(index < 0){
-index = images.length - 1;
-}
-slides.style.transform = `translateX(${-index * 400}px)`;
-}
-
-
-
+setInterval(showSlide,4000);
