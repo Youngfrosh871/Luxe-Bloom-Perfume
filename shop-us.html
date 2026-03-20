@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfume Shop</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}body{ background: linear-gradient(135deg, #0a1f44, #1e3c72); color:#fff; }
+
+header{ display:flex; justify-content:space-between; padding:15px 20px; background: rgba(0,0,0,0.3); }
+
+nav a{ color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
+
+h1{ text-align:center; margin:20px 0; }
+
+.shop-container{ display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px; padding:20px; }
+
+.card{ background: rgba(255,255,255,0.08); border-radius:20px; padding:15px; backdrop-filter: blur(10px); transition:0.3s; }
+
+.card:hover{ transform: scale(1.05); }
+
+.card img{ width:100%; border-radius:15px; }
+
+.card h3{ margin:10px 0; }
+
+.price{ color:#00d4ff; font-weight:bold; }
+
+button{ margin-top:10px; padding:10px; border:none; border-radius:10px; background:#00d4ff; color:#000; cursor:pointer; width:100%; }
+
+button:hover{ background:#00aacc; }
+
+@media(max-width:600px){ header{ flex-direction:column; align-items:center; } } </style>
+
+</head><body><header>
+  <h2>Young Frosh Store</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact_us.html">Contact</a>
+  </nav>
+</header><h1>Luxury Perfume Collection</h1><section class="shop-container"><div class="card">
+  <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="perfume">
+  <h3>Royal Oud</h3>
+  <p class="price">$120</p>
+  <button onclick="buyItem('Royal Oud')">Buy Now</button>
+</div><div class="card">
+  <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539" alt="perfume">
+  <h3>Midnight Rose</h3>
+  <p class="price">$95</p>
+  <button onclick="buyItem('Midnight Rose')">Buy Now</button>
+</div><div class="card">
+  <img src="assets/images (4).jpg" alt="perfume">
+  <h3>Ocean Breeze</h3>
+  <p class="price">$80</p>
+  <button onclick="buyItem('Ocean Breeze')">Buy Now</button>
+</div><div class="card">
+  <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="perfume">
+  <h3>Golden Desire</h3>
+  <p class="price">$150</p>
+  <button onclick="buyItem('Golden Desire')">Buy Now</button>
+</div><div class="card">
+  <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" alt="perfume">
+  <h3>Vanilla Touch</h3>
+  <p class="price">$70</p>
+  <button onclick="buyItem('Vanilla Touch')">Buy Now</button>
+</div><div class="card">
+  <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f" alt="perfume">
+  <h3>Dark Spice</h3>
+  <p class="price">$110</p>
+  <button onclick="buyItem('Dark Spice')">Buy Now</button>
+</div></section><script>
+function buyItem(name){
+  alert(name + ' added to cart!');
+}
+</script></body>
+</html>

@@ -3,140 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Perfume</title>
+<title>Young Frosh Perfumes</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h2 class="logo">RoseAura</h2>
-
+<!-- NAVBAR -->
 <nav>
-    <ul>
-<li><a href="#">Home</a></li>
-<li><a href="shop us.html">Shop</a></li>
-<li><a href="about us.html">About</a></li>
-<li><a href="contact_us.html">Contact</a></li>
-</ul>
+<div class="logo">Young Frosh Perfumes</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+<div class="nav-links" id="menu">
+<a href="#">Home</a>
+<a href="shop-us.html">Shop</a>
+<a href="contact_us.html">Contact</a>
+</div>
 </nav>
 
-</header>
+<!-- HERO -->
+<section class="hero">
 
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1594035910387-fea47794261f');"></div>
 
-<!-- HERO CAROUSEL -->
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1615634262417-d8c3c0c3c2d3');"></div>
 
-<section class="carousel">
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb');"></div>
 
-<div class="slides">
+<div class="overlay">
+<h1>Young Frosh Feminine Fragrance</h1>
+<p>Feel Elegant. Smell Amazing.</p>
 
-<div class="slide active">
-<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
-<div class="caption">
-<h1>Luxury Feminine Fragrance</h1>
-<p>Feel elegant every day</p>
-<button>Shop Now</button>
-</div>
-</div>
-
-<div class="slide">
-<img src="https://images.unsplash.com/photo-1615634262417-3b4a99c1b3f5">
-<div class="caption">
-<h1>Soft Floral Collection</h1>
-<p>Perfect scent for every moment</p>
-<button>Explore</button>
-</div>
-</div>
-
-<div class="slide">
-<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
-<div class="caption">
-<h1>Timeless Beauty</h1>
-<p>Luxury perfume for women</p>
-<button>Discover</button>
-</div>
-</div>
+<!-- FIXED BUTTON -->
+<button id="shopBtn">Shop Now</button>
 
 </div>
 
 </section>
 
-
-
 <!-- PRODUCTS -->
-
-<section class="products">
-
-<h2>Our Best Perfumes</h2>
+<section class="products" id="products">
+<h2>Our Perfumes</h2>
 
 <div class="product-grid">
 
+<!-- 6 PRODUCTS -->
+
 <div class="card">
-<img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd">
-<h3>Rose Essence</h3>
-<p>$45</p>
-<button>Buy Now</button>
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+<h3>Rose Gold</h3>
+<p class="price">₦15,000</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Rose%20Gold%20Perfume" class="buy-btn">Buy Now</a>
 </div>
 
+<div class="card">
+<img src="assets/71Rt86TIqhL._AC_UF1000,1000_QL80_.jpg">
+<h3>Midnight Bloom</h3>
+<p class="price">₦18,000</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Midnight%20Bloom" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539">
+<h3>Vanilla Touch</h3>
+<p class="price">₦12,000</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Vanilla%20Touch" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb">
+<h3>Sweet Blossom</h3>
+<p class="price">₦14,000</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Sweet%20Blossom" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f">
+<h3>Pink Desire</h3>
+<p class="price">₦16,500</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Pink%20Desire" class="buy-btn">Buy Now</a>
+</div>
+
+<div class="card">
+<img src="assets/images (4).jpg">
+<h3>Golden Aura</h3>
+<p class="price">₦20,000</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Golden%20Aura" class="buy-btn">Buy Now</a>
+</div>
 <div class="card">
 <img src="assets/images (6).jpg">
-<h3>Golden Bloom</h3>
-<p>$55</p>
-<button>Buy Now</button>
+<h3>Crystal Bloom</h3>
+<p class="price">₦17,000</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Crystal%20Bloom" class="buy-btn">Buy Now</a>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1595429035839-c99c298ffdde">
-<h3>Pink Aura</h3>
-<p>$60</p>
-<button>Buy Now</button>
+<img src="assets/download (10).jpg">
+<h3>Floral Queen</h3>
+<p class="price">₦19,500</p>
+<a href="https://wa.me/2349044534867?text=I%20want%20Floral%20Queen" class="buy-btn">Buy Now</a>
 </div>
 
 </div>
-
 </section>
 
-
-
-<!-- ABOUT -->
-
-<section class="about">
-
-<h2>About Our Perfume</h2>
-
-<p>
-Our fragrances are crafted with elegant floral notes,
-luxurious ingredients and feminine elegance.
-Experience the beauty of scent with RoseAura.
-</p>
-
-</section>
 <!-- CONTACT -->
-
-<section class="contact">
-
+<section class="contact" id="contact">
 <h2>Contact Us</h2>
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Your Email">
-
-<textarea placeholder="Message"></textarea>
-
-<button>Send Message</button>
-
-</form>
-
+<p>📞 09044534867</p>
+<p>📍 Ijede, Ikorodu, Lagos</p>
 </section>
-
-
-<footer>
-
-<p>© 2026 RoseAura Perfume</p>
-
-</footer>
 
 <script src="script.js"></script>
 
